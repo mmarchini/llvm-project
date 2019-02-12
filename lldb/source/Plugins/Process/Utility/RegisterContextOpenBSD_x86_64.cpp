@@ -39,6 +39,8 @@ typedef struct _GPR {
   uint64_t es;
   uint64_t fs;
   uint64_t gs;
+  uint64_t fs_base;
+  uint64_t gs_base;
 } GPR;
 
 struct DBG {

@@ -161,6 +161,8 @@ enum {
   lldb_cs_x86_64,
   lldb_fs_x86_64,
   lldb_gs_x86_64,
+  lldb_fs_base_x86_64,
+  lldb_gs_base_x86_64,
   lldb_ss_x86_64,
   lldb_ds_x86_64,
   lldb_es_x86_64,

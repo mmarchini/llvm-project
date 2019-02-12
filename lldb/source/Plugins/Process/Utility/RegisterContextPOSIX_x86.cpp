@@ -78,7 +78,8 @@ static const uint32_t g_gpr_regnums_x86_64[] = {
     lldb_r8_x86_64,     lldb_r9_x86_64,     lldb_r10_x86_64, lldb_r11_x86_64,
     lldb_r12_x86_64,    lldb_r13_x86_64,    lldb_r14_x86_64, lldb_r15_x86_64,
     lldb_rip_x86_64,    lldb_rflags_x86_64, lldb_cs_x86_64,  lldb_fs_x86_64,
-    lldb_gs_x86_64,     lldb_ss_x86_64,     lldb_ds_x86_64,  lldb_es_x86_64,
+    lldb_gs_x86_64,     lldb_fs_base_x86_64,     lldb_gs_base_x86_64,  lldb_ss_x86_64,
+    lldb_ds_x86_64,     lldb_es_x86_64,
     lldb_eax_x86_64,    lldb_ebx_x86_64,    lldb_ecx_x86_64, lldb_edx_x86_64,
     lldb_edi_x86_64,    lldb_esi_x86_64,    lldb_ebp_x86_64, lldb_esp_x86_64,
     lldb_r8d_x86_64,  // Low 32 bits or r8
@@ -437,6 +438,7 @@ size_t RegisterContextPOSIX_x86::GetRegisterSetCount() {
 }
 
 const RegisterSet *RegisterContextPOSIX_x86::GetRegisterSet(size_t set) {
+  printf("posix context");
   if (IsRegisterSetAvailable(set)) {
     switch (m_register_info_ap->m_target_arch.GetMachine()) {
     case llvm::Triple::x86:

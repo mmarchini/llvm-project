@@ -35,6 +35,8 @@ typedef struct _GPR {
   uint64_t rax;    /* 14 */
   uint64_t gs;     /* 15 */
   uint64_t fs;     /* 16 */
+  uint64_t gs_base;     /* 15 */
+  uint64_t fs_base;     /* 16 */
   uint64_t es;     /* 17 */
   uint64_t ds;     /* 18 */
   uint64_t trapno; /* 19 */

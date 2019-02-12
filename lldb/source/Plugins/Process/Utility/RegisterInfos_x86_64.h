@@ -217,6 +217,8 @@ static RegisterInfo g_register_infos_x86_64[] = {
     DEFINE_GPR(cs,     nullptr,  dwarf_cs_x86_64,      dwarf_cs_x86_64,      LLDB_INVALID_REGNUM,        LLDB_INVALID_REGNUM),
     DEFINE_GPR(fs,     nullptr,  dwarf_fs_x86_64,      dwarf_fs_x86_64,      LLDB_INVALID_REGNUM,        LLDB_INVALID_REGNUM),
     DEFINE_GPR(gs,     nullptr,  dwarf_gs_x86_64,      dwarf_gs_x86_64,      LLDB_INVALID_REGNUM,        LLDB_INVALID_REGNUM),
+    DEFINE_GPR(fs_base, "fs.base",  dwarf_fs_base_x86_64,      dwarf_fs_base_x86_64,      LLDB_INVALID_REGNUM,        LLDB_INVALID_REGNUM),
+    DEFINE_GPR(gs_base, "gs.base",  dwarf_gs_base_x86_64,      dwarf_gs_base_x86_64,      LLDB_INVALID_REGNUM,        LLDB_INVALID_REGNUM),
     DEFINE_GPR(ss,     nullptr,  dwarf_ss_x86_64,      dwarf_ss_x86_64,      LLDB_INVALID_REGNUM,        LLDB_INVALID_REGNUM),
     DEFINE_GPR(ds,     nullptr,  dwarf_ds_x86_64,      dwarf_ds_x86_64,      LLDB_INVALID_REGNUM,        LLDB_INVALID_REGNUM),
     DEFINE_GPR(es,     nullptr,  dwarf_es_x86_64,      dwarf_es_x86_64,      LLDB_INVALID_REGNUM,        LLDB_INVALID_REGNUM),

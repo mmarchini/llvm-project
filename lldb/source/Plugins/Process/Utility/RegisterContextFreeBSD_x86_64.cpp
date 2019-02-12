@@ -34,6 +34,8 @@ typedef struct _GPR {
   uint32_t trapno;
   uint16_t fs;
   uint16_t gs;
+  uint16_t fs_base;
+  uint16_t gs_base;
   uint32_t err;
   uint16_t es;
   uint16_t ds;

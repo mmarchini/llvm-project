@@ -984,6 +984,7 @@ size_t RegisterContextLLDB::GetRegisterSetCount() {
 }
 
 const RegisterSet *RegisterContextLLDB::GetRegisterSet(size_t reg_set) {
+  printf("lldb context\n");
   return m_thread.GetRegisterContext()->GetRegisterSet(reg_set);
 }
 

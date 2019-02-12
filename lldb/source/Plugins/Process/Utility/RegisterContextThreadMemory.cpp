@@ -86,6 +86,7 @@ size_t RegisterContextThreadMemory::GetRegisterSetCount() {
 }
 
 const RegisterSet *RegisterContextThreadMemory::GetRegisterSet(size_t reg_set) {
+  printf("thread context\n");
   UpdateRegisterContext();
   if (m_reg_ctx_sp)
     return m_reg_ctx_sp->GetRegisterSet(reg_set);
